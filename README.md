@@ -45,7 +45,7 @@ $ gulp
   8. Para ver la aplicación angularjs en el navegador, vamos abrir una consola ubicados en la carpeta de nuestro proyecto y escribiremos la instrucción gulp. ![Alt text](/assets/demo8.png?raw=true "Demo 8")
   9. En el navegador visitar  http://localhost:8080. ![Alt text](/assets/demo10.png?raw=true "Demo 10")
   10. Ahora que vimos que nuestra aplicación está funcionando hasta ahora, vamos a realizar un Refactor de nuestro código para empezar a utilizar las mejores prácticas en la construcción de aplicaciones con Angular.js. Abrir index.html y modificar la etiqueta ```<div class="main" ng-controller="MainController">``` agregando un alias al control para usar de una forma mas comoda como se muestra a continuación: ![Alt text](/assets/demo11.png?raw=true "Demo 11")
-  12. Dentro del index.html  en ```<div class="main">```, modifique el elemento <h1> para que se vea asi: ![Alt text](/assets/demo12.png?raw=true "Demo 12")
+  12. Dentro del index.html  en ```<div class="main">```, modifique el elemento ```<h1>``` para que se vea asi: ![Alt text](/assets/demo12.png?raw=true "Demo 12")
   13. Abrir main/main.controller.js y modificar el archivo para que se vea de la siguente manera, si quieres saber porque realizamos esta modificación visita [Angular Style Guide de Jonh Papa](https://github.com/johnpapa/angular-styleguide) ![Alt text](/assets/demo13.png?raw=true "Demo 13")
 
 #### ¡Impresionante! Usted construyó una aplicación angularjs. ¿Cómo funciona?
