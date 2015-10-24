@@ -124,30 +124,13 @@ Ahora vamos adicionar un nuevo evento para hacer click en los "No me gusta"
 
 ![Alt text](/assets/lean.png?raw=true "Learn")
 
-## Dependencias externas
+## Contribución
 
-Ahora vamos agregar una dependencia de un plugin muy usado para el manejo de rutas, este es AngularUI Router, para ello vamos a realizar los siguientes pasos:
-
-1. Agregar el script en el index.html: ![Alt text](/assets/demo24.png?raw=true "Demo 24")
-2. Dentro del archivo app.js que es nuestro modulo principal, vamos agregar la dependencia del AngularUI Router, de la siguiente forma, a esto se le conoce como Inyección de dependencias:
-![Alt text](/assets/demo25.png?raw=true "Demo 25")
-
-## Rutas
-
-Hasta ahora en el taller de AngularJS hemos visto muchas cosas interesantes, sin embargo nos hemos limitado a hacer aplicaciones en las que solo teníamos una ruta y una vista. Sin embargo, cuando se vayan complicando los requisitos de nuestras aplicaciones podremos necesitar ampliar estas posibilidades.
-
-
-1. Primero vamos a modificar el archivo index.html para dejarlo unicamente como si fuera nuestra pagina maestra, para ello vamos a cortar todo el elemento completo ```<div class="main" ng-controller="MainController as main">``` y reemplazar por la el siguiente codigo: ```<div ui-view></div>``` 
-2. Abrir main/main.html y pegar el codigo cortado del index.html en este archivo.
-3. Eliminar la referencia del ng-controller para finalmente quedar asi nuestro archivo: ![Alt text](/assets/demo26.png?raw=true "Demo 26")
-
-## Configurar el sistema de enrutado con $stateProvider
-
-1. Abrir el archivo main/main.route.js y agregar el siguiente codigo: 
-2. Adicionar el script en el index.html 
-
+* CodeAcademy
+* Angular Guide Style
 
 ### License
+* MIT
 
 
 
