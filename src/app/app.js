@@ -6,5 +6,5 @@
 	*
 	* Description
 	*/
-	angular.module('DemoAngular', []);
+	angular.module('DemoAngular', ['ui.router']);
 })();
