@@ -15,7 +15,7 @@ En estre workshop vamos a trabajar con una serie de tecnologias open source
 * [node.js] - evented I/O for the backend
 * [Gulp] - the streaming build system
 
-### Prerequisitos Installation
+### Prerequisitospara el workshop
 
 * [node.js] - evented I/O for the backend
 * [Gulp] - Necesario estar instalado de forma global en el sistema.
@@ -48,32 +48,32 @@ $ gulp
   12. Dentro del index.html  en ```<div class="main">```, modifique el elemento ```<h1>``` para que se vea asi: ![Alt text](/assets/demo12.png?raw=true "Demo 12")
   13. Abrir main/main.controller.js y modificar el archivo para que se vea de la siguente manera, si quieres saber porque realizamos esta modificación visita [Angular Style Guide de Jonh Papa](https://github.com/johnpapa/angular-styleguide) ![Alt text](/assets/demo13.png?raw=true "Demo 13")
 
-#### ¡Impresionante! Usted construyó una aplicación angularjs. ¿Cómo funciona?
+#### ¡Impresionante! Haz construido una aplicación angularjs. ¿Cómo funciona?
 
 1. En app.js, hemos creado un nuevo módulo llamado DemoAngular. Un módulo contiene los diferentes componentes de una aplicación angularjs.
-2. Luego, en index.html agregamos <body ng-app="DemoAngular">. El ng-app es llamada una directiva. Usamos la directiva ng-app para definir el ámbito de la aplicación.
+2. Luego, en index.html agregamos ```<body ng-app="DemoAngular">```. El ng-app es llamada una directiva. Usamos la directiva ng-app para definir el ámbito de la aplicación.
 3. En main.controller.js hemos creado un nuevo controlador llamado MainController. Un controlador maneja los datos de la aplicación. Aquí utilizamos una propiedad título para almacenar una cadena, y agregarlo al $scope (el alcance, que al final lo reemplazamos por this).
-4. Luego, enn index.html, añadimos <div class="main" ng-controller="MainController as main">. ng-controller es una directiva que define el alcance del controlador.
-5. Dentro de <div class="main"> accedimos a $scope.title usando {{ title }}. Luego lo cambiamos por vm.title y {{ main.title }}. Las expresiones se utilizan para mostrar los valores en la página.
+4. Luego, enn index.html, añadimos ```<div class="main" ng-controller="MainController as main">```. ng-controller es una directiva que define el alcance del controlador.
+5. Dentro de ```<div class="main">``` accedimos a $scope.title usando {{ title }}. Luego lo cambiamos por vm.title y {{ main.title }}. Las expresiones se utilizan para mostrar los valores en la página.
 6. El valor del título se presentó cuando vimos la aplicación en el navegador..
 
 ## Filtros
 
 1. Vamos a añadir más datos al controlador y los mostraremos en la vista. En el controlador, agregue una propiedad llamada product. Hagalo igual a un objeto con las siguientes propiedades: 
-2. Luego en el index.html debajo del elemento <h2> vas agregar el siguiente código:  
-3. Actualmente el precio del producto se muestra como un número. Sería mejor darle formato como moneda. En lugar de cambiar los datos en el controlador, vamos a usar un filtro de angularjs para dar formato a los datos en la vista. En index.html en <p class = "price">, cambiar la expresión de este aspecto: 
+2. Luego en el index.html debajo del elemento ```<h2>``` vas agregar el siguiente código:  
+3. Actualmente el precio del producto se muestra como un número. Sería mejor darle formato como moneda. En lugar de cambiar los datos en el controlador, vamos a usar un filtro de angularjs para dar formato a los datos en la vista. En index.html en ```<p class = "price">```, cambiar la expresión de este aspecto: 
 4. ¡Excelente! El precio del producto ha cambiado de un número a una moneda con formato. ¿Cómo funciona?
 + Angularjs obtiene el valor de product.price
 + Envía este número en el filtro currency. El símbolo de canalización (|) toma la salida en la "tubos" a la derecha e izquierda.
 + De esta manera, los filtros ayudan a separar el contenido en el controlador de su presentación en la vista.
 5. En main.controller.js  dentro vm.product, añadir una tercera propiedad denominada pubdate:  pubdate: new Date('2014', '03', '08')
-6. En index.html dentro <p class="date">, mostrar la propiedad pubdate.
+6. En index.html dentro ```<p class="date">```, mostrar la propiedad pubdate.
 7. Formatear la propiedad pubdate del producto con el filtro date y el nombre del producto con el filtro uppercase.
 
 ## ng-repeat
 1. Eliminemos en el MainController la propiedad product.
 2. Agregamos una propiedad products tal y como se muestra acá:
-3. En la vista reemplace el contenido del elemento <div class="col-md-6"> por esto: 
+3. En la vista reemplace el contenido del elemento ```<div class="col-md-6">``` por esto: 
 
 Hasta ahora hemos hecho una aplicación angularjs estática mediante la adición de propiedades en el controlador y mostrando en la vista. Angularjs es un framework para la creación de aplicaciones web dinámicas, así que vamos a empezar a hacer esta aplicación interactiva.
 
@@ -81,10 +81,10 @@ Hasta ahora hemos hecho una aplicación angularjs estática mediante la adición
 
 1. En el controlador en el array vm.products, añadir una nueva propiedad llamada likes en cada uno de los elementos de este array. 
 2. Establecer la propiedad likes en 0
-3. En la vista debajo de <p class="date">, escriba un elemento para rating: 
-4. Dentro <p class="likes">, mostrar los likes del producto usando una expresión.
+3. En la vista debajo de ```<p class="date">```, escriba un elemento para rating: 
+4. Dentro ```<p class="likes">```, mostrar los likes del producto usando una expresión.
 5. De vuelta en el controlador después de vm.products, adjunte una nueva propiedad a con el nombre plusOne. Hacer esta propiedad a la siguiente función. 
-6. Modificar en la vista <p class="likes"> por el siguiente codigo y luego ir al browser refrescar y hacer click en los likes: 
+6. Modificar en la vista ```<p class="likes">``` por el siguiente codigo y luego ir al browser refrescar y hacer click en los likes: 
 
 ¡Excelente! Cada vez que haga clic en el número de likes, el número aumenta. ¿Cómo funciona?
 
@@ -95,11 +95,11 @@ Hasta ahora hemos hecho una aplicación angularjs estática mediante la adición
 Ahora vamos adicionar un nuevo evento para hacer click en los "No me gusta"
 
 1. En el controlador, añadir una nueva propiedad dislikes para cada elemento donde este valor sea igual a 0.
-2. En la vista debajo  <p class="likes">, adicionar un elemento para <p class="dislikes">. Mostrar los dislikes usando una expresión.
+2. En la vista debajo  ```<p class="likes">```, adicionar un elemento para ```<p class="dislikes">```. Mostrar los dislikes usando una expresión.
 3. De vuelta en el controlador después vm.plusOne agregue una función igual a esta pero llamada minusOne. donde aumente lo dislikes.
-4. En la vista, use el ng-click para llamar a la función minuOne() cuando <p class="dislikes"> se hace clic.
+4. En la vista, use el ng-click para llamar a la función minuOne() cuando ```<p class="dislikes">``` se hace clic.
 
-##### ¡Felicidades! Usted construyó una aplicación angularjs desde cero. ¿Qué podemos generalizar hasta ahora?
+##### ¡Felicidades! Haz construido una aplicación angularjs desde cero. ¿Qué podemos generalizar hasta ahora?
 
 1. Un usuario visita la aplicación de angular.js.
 2. La vista representan los datos de la aplicación a través de la utilización de expresiones, filtros y directivas. Las directivas agregan nuevos comportamientos a los elementos HTML.
