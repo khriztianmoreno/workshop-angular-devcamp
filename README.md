@@ -1,4 +1,4 @@
-# Angula.JS herramientas no atadas a ningun browser
+# Angular.JS herramientas no atadas a ningun browser
 
 Angularjs es un framework web JavaScript tuvo como objetivo hacer que las aplicaciones web sencillas de construir y fácil de mantener.
 
@@ -96,14 +96,14 @@ Hasta ahora hemos hecho una aplicación angularjs estática mediante la adición
 
 1. En el controlador en el array vm.products, añadir una nueva propiedad llamada likes en cada uno de los elementos de este array. 
 2. Establecer la propiedad likes en 0
-3. En la vista debajo de ```<p class="date">```, escriba un elemento para rating: 
+3. En la vista debajo de ```<p class="date">```, escriba un elemento para rating: ![Alt text](/assets/demo21.png?raw=true "Demo 21")
 4. Dentro ```<p class="likes">```, mostrar los likes del producto usando una expresión.
-5. De vuelta en el controlador después de vm.products, adjunte una nueva propiedad a con el nombre plusOne. Hacer esta propiedad a la siguiente función. 
-6. Modificar en la vista ```<p class="likes">``` por el siguiente codigo y luego ir al browser refrescar y hacer click en los likes: 
+5. De vuelta en el controlador después de vm.products, adjunte una nueva propiedad a con el nombre plusOne. Hacer esta propiedad a la siguiente función. ![Alt text](/assets/demo22.png?raw=true "Demo 22")
+6. Modificar en la vista ```<p class="likes">``` por el siguiente codigo y luego ir al browser refrescar y hacer click en los likes: ![Alt text](/assets/demo23.png?raw=true "Demo 23")
 
 ¡Excelente! Cada vez que haga clic en el número de likes, el número aumenta. ¿Cómo funciona?
 
-1. El ng-click es una directiva. Cuando <p class="likes"> se hace click, ng-click le dice a AngularJS que ejecute la función plusOne() en el controlador.
+1. El ng-click es una directiva. Cuando ```<p class="likes">``` se hace click, ng-click le dice a AngularJS que ejecute la función plusOne() en el controlador.
 2. La funcion plusOne() obtiene el índice del producto que se hizo clic y a continuación, suma la propiedad likes en 1 a los gustos de ese producto.
 3. Observe que el plusOne() no interactúa con la vista en absoluto; sólo actualiza el controlador. Cualquier cambio realizado en el controlador aparece en la vista.
 
@@ -121,6 +121,8 @@ Ahora vamos adicionar un nuevo evento para hacer click en los "No me gusta"
 3. Un usuario hace clic en un elemento en la vista. Si el elemento tiene una directiva, angularjs ejecuta la función.
 4. La función en el controlador actualiza el estado de los datos.
 5. La vista cambia automáticamente y muestra los datos actualizados. La página no necesita ser recargada.
+
+![Alt text](/assets/lean.png?raw=true "Learn")
 
 
 ### License
