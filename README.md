@@ -124,6 +124,15 @@ Ahora vamos adicionar un nuevo evento para hacer click en los "No me gusta"
 
 ![Alt text](/assets/lean.png?raw=true "Learn")
 
+## Dependencias externas
+
+Ahora vamos agregar una dependencia de un plugin muy usado para el manejo de rutas, este es AngularUI Router, para ello vamos a realizar los siguientes pasos:
+
+1. Agregar el script en el index.html: ![Alt text](/assets/demo23.png?raw=true "Demo 23")
+2. Dentro del archivo app.js que es nuestro modulo principal, vamos agregar la dependencia del AngularUI Router, de la siguiente forma: ![Alt text](/assets/demo24.png?raw=true "Demo 24")
+
+## Rutas
+
 
 ### License
 
