@@ -36,20 +36,17 @@ $ gulp
 ## Instruciones
 
   1. Vamos a empezar por hacer una aplicación angularjs simple. Vamos a explicar cada paso en el siguiente ejercicio. En el archivo app.js, escriba el contenido exactamente como se ve aquí: ![Alt text](/assets/demo1.png?raw=true "Demo 1")
-  2. Abrir index.html. Modifique la etiqueta <body> por lo que se ve así:
-  3. Incluir la referencia de Angular.JS en nuestro archivo index.html, como se ve aca:
-  4. Abrir  main/main.controller.js. Escriba el contenido tal y como se puede ver aquí:
-  5. Ir a index.html. Modificar la etiqueta <div class=“main”> por lo que se ve aquí:
-  6. En el mismo archivo index.html vamos a incluir el archivo app.js que contiene nuestro módulo y el controller que acabamos de modificar llamado main.controller.js quedando de esta manera:
-  7. Dentro del index.html  en <div class="main">, modifique el elemento <h1> para que se vea asi:
-  8. Para ver la aplicación angularjs en el navegador, vamos abrir una consola ubicados en la carpeta de nuestro proyecto y escribiremos la instrucción gulp.
-  9. En el navegador visitar  http://localhost:8080. 
-
-Ahora que vimos que nuestra aplicación está funcionando hasta ahora, vamos a realizar un Refactor de nuestro código para empezar a utilizar las mejores prácticas en la construcción de aplicaciones con Angular.js.
-
-1. Abrir index.html y modificar la etiqueta <div class="main" ng-controller="MainController"> agregando un alias al control para usar de una forma mas comoda como se muestra a continuación: 
-2. Dentro del index.html  en <div class=“main”>, modifique el elemento <h1> para que se vea asi: 
-3. Abrir main/main.controller.js y modificar el archivo para que se vea de la siguente manera, si quieres saber porque realizamos esta modificación visita [Angular Style Guide de Jonh Papa](https://github.com/johnpapa/angular-styleguide)
+  2. Abrir index.html. Modifique la etiqueta <body> por lo que se ve así: ![Alt text](/assets/demo3.png?raw=true "Demo 3")
+  3. Incluir la referencia de Angular.JS en nuestro archivo index.html, como se ve aca: ![Alt text](/assets/demo2.png?raw=true "Demo 2")
+  4. Abrir  main/main.controller.js. Escriba el contenido tal y como se puede ver aquí: ![Alt text](/assets/demo4.png?raw=true "Demo 4")
+  5. Ir a index.html. Modificar la etiqueta ```<div class="main">```  por lo que se ve aquí: ![Alt text](/assets/demo5.png?raw=true "Demo 5")
+  6. En el mismo archivo index.html vamos a incluir el archivo app.js que contiene nuestro módulo y el controller que acabamos de modificar llamado main.controller.js quedando de esta manera: ![Alt text](/assets/demo6.png?raw=true "Demo 6")
+  7. Dentro del index.html en ```<div class="main">``` modifique el elemento H1 para que se vea asi: ![Alt text](/assets/demo7.png?raw=true "Demo 7")
+  8. Para ver la aplicación angularjs en el navegador, vamos abrir una consola ubicados en la carpeta de nuestro proyecto y escribiremos la instrucción gulp. ![Alt text](/assets/demo8.png?raw=true "Demo 8")
+  9. En el navegador visitar  http://localhost:8080. ![Alt text](/assets/demo10.png?raw=true "Demo 10")
+  10. Ahora que vimos que nuestra aplicación está funcionando hasta ahora, vamos a realizar un Refactor de nuestro código para empezar a utilizar las mejores prácticas en la construcción de aplicaciones con Angular.js. Abrir index.html y modificar la etiqueta ```<div class="main" ng-controller="MainController">``` agregando un alias al control para usar de una forma mas comoda como se muestra a continuación: ![Alt text](/assets/demo11.png?raw=true "Demo 11")
+  12. Dentro del index.html  en ```<div class="main">```, modifique el elemento <h1> para que se vea asi: ![Alt text](/assets/demo12.png?raw=true "Demo 12")
+  13. Abrir main/main.controller.js y modificar el archivo para que se vea de la siguente manera, si quieres saber porque realizamos esta modificación visita [Angular Style Guide de Jonh Papa](https://github.com/johnpapa/angular-styleguide) ![Alt text](/assets/demo13.png?raw=true "Demo 13")
 
 #### ¡Impresionante! Usted construyó una aplicación angularjs. ¿Cómo funciona?
 
@@ -112,4 +109,6 @@ Ahora vamos adicionar un nuevo evento para hacer click en los "No me gusta"
 
 
 ### License
+
+
 
