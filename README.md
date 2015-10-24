@@ -55,7 +55,19 @@ $ gulp
 3. En main.controller.js hemos creado un nuevo controlador llamado MainController. Un controlador maneja los datos de la aplicación. Aquí utilizamos una propiedad título para almacenar una cadena, y agregarlo al $scope (el alcance, que al final lo reemplazamos por this).
 4. Luego, enn index.html, añadimos ```<div class="main" ng-controller="MainController as main">```. ng-controller es una directiva que define el alcance del controlador.
 5. Dentro de ```<div class="main">``` accedimos a $scope.title usando {{ title }}. Luego lo cambiamos por vm.title y {{ main.title }}. Las expresiones se utilizan para mostrar los valores en la página.
-6. El valor del título se presentó cuando vimos la aplicación en el navegador..
+6. El valor del título se presentó cuando vimos la aplicación en el navegador.
+
+### Ahora haz tu estos pasos siguentes para practicar
+
+1. Tanto el MainController y la vista index.html tienen acceso a $scope. Esto significa que podemos usar $scope para la comunicación entre el controlador y la vista. En el controlador, cambie el valor del título por otra cadena de texto. 
+2. Del mismo modo, las nuevas propiedades unidas a $scope estarán disponibles para utilizar en la vista. En el controlador, vamos agregar una nueva propiedad llamada promo y establezca su valor con una cadena de texto. 
+3. En la vista debajo del elemento ```<h1>```, adicionar un elemento ```<h2>``` que use una expresión para mostrar la promo en la página.
+
+Hasta ahora este es nuestro flujo de trabajo típico al hacer una aplicación angularjs:
++ Crear un módulo y utilizar ng-app con el fin de definir el alcance de la aplicación.
++ Crear un controlador, y utilizar ng-controller con el fin de definir el alcance del controlador.
++ Añadir datos al $scope en el controlador de modo que se puede mostrar con expresiones en la vista.
+
 
 ## Filtros
 
