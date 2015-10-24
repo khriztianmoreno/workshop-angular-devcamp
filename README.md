@@ -71,21 +71,24 @@ Hasta ahora este es nuestro flujo de trabajo típico al hacer una aplicación an
 
 ## Filtros
 
-1. Vamos a añadir más datos al controlador y los mostraremos en la vista. En el controlador, agregue una propiedad llamada product. Hagalo igual a un objeto con las siguientes propiedades: 
-2. Luego en el index.html debajo del elemento ```<h2>``` vas agregar el siguiente código:  
-3. Actualmente el precio del producto se muestra como un número. Sería mejor darle formato como moneda. En lugar de cambiar los datos en el controlador, vamos a usar un filtro de angularjs para dar formato a los datos en la vista. En index.html en ```<p class = "price">```, cambiar la expresión de este aspecto: 
+1. Vamos a añadir más datos al controlador y los mostraremos en la vista. En el controlador, agregue una propiedad llamada product. Hagalo igual a un objeto con las siguientes propiedades: ![Alt text](/assets/demo16.png?raw=true "Demo 16")
+2. Luego en el index.html debajo del elemento ```<h2>``` vas agregar el siguiente código:  ![Alt text](/assets/demo17.png?raw=true "Demo 17")
+3. Actualmente el precio del producto se muestra como un número. Sería mejor darle formato como moneda. En lugar de cambiar los datos en el controlador, vamos a usar un filtro de angularjs para dar formato a los datos en la vista. En index.html en ```<p class = "price">```, cambiar la expresión de este aspecto: ![Alt text](/assets/demo18.png?raw=true "Demo 18")
 4. ¡Excelente! El precio del producto ha cambiado de un número a una moneda con formato. ¿Cómo funciona?
+
 + Angularjs obtiene el valor de product.price
 + Envía este número en el filtro currency. El símbolo de canalización (|) toma la salida en la "tubos" a la derecha e izquierda.
 + De esta manera, los filtros ayudan a separar el contenido en el controlador de su presentación en la vista.
+
 5. En main.controller.js  dentro vm.product, añadir una tercera propiedad denominada pubdate:  pubdate: new Date('2014', '03', '08')
 6. En index.html dentro ```<p class="date">```, mostrar la propiedad pubdate.
 7. Formatear la propiedad pubdate del producto con el filtro date y el nombre del producto con el filtro uppercase.
 
 ## ng-repeat
 1. Eliminemos en el MainController la propiedad product.
-2. Agregamos una propiedad products tal y como se muestra acá:
-3. En la vista reemplace el contenido del elemento ```<div class="col-md-6">``` por esto: 
+2. Agregamos una propiedad products tal y como se muestra acá: 
+![Alt text](/assets/demo19.png?raw=true "Demo 19")
+3. En la vista reemplace el contenido del elemento ```<div class="col-md-6">``` por esto: ![Alt text](/assets/demo20.png?raw=true "Demo 20")
 
 Hasta ahora hemos hecho una aplicación angularjs estática mediante la adición de propiedades en el controlador y mostrando en la vista. Angularjs es un framework para la creación de aplicaciones web dinámicas, así que vamos a empezar a hacer esta aplicación interactiva.
 
