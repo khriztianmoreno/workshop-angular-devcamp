@@ -137,9 +137,14 @@ Ahora vamos agregar una dependencia de un plugin muy usado para el manejo de rut
 Hasta ahora en el taller de AngularJS hemos visto muchas cosas interesantes, sin embargo nos hemos limitado a hacer aplicaciones en las que solo teníamos una ruta y una vista. Sin embargo, cuando se vayan complicando los requisitos de nuestras aplicaciones podremos necesitar ampliar estas posibilidades.
 
 
-1. Primero vamos a modificar el archivo index.html para dejarlo unicamente como si fuera nuestra pagina maestra, para ello vamos a cortar todo el elemento completo ```<div class="main" ng-controller="MainController as main">``` y reemplazar por la el siguiente codigo: ```<div ui-view></div>`` 
+1. Primero vamos a modificar el archivo index.html para dejarlo unicamente como si fuera nuestra pagina maestra, para ello vamos a cortar todo el elemento completo ```<div class="main" ng-controller="MainController as main">``` y reemplazar por la el siguiente codigo: ```<div ui-view></div>``` 
 2. Abrir main/main.html y pegar el codigo cortado del index.html en este archivo.
-3. Eliminar la referencia del ng-controller para finalmente quedar asi nuestro archivo: 
+3. Eliminar la referencia del ng-controller para finalmente quedar asi nuestro archivo: ![Alt text](/assets/demo26.png?raw=true "Demo 26")
+
+## Configurar el sistema de enrutado con $stateProvider
+
+1. Abrir el archivo main/main.route.js y agregar el siguiente codigo: 
+2. Adicionar el script en el index.html 
 
 
 ### License
